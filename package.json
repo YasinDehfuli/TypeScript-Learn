@@ -1,0 +1,24 @@
+{
+  "name": "typescript-learn",
+  "version": "1.0.0",
+  "description": "Rooket learn type script course https://roocket.ir/series/learning-typescript/",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasinDehfuli/TypeScript-Learn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/YasinDehfuli/TypeScript-Learn/issues"
+  },
+  "homepage": "https://github.com/YasinDehfuli/TypeScript-Learn#readme",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}
