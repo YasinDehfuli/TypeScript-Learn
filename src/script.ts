@@ -1,3 +1,4 @@
+// Types 🔻
 const fullName: string = "John Doe";
 const num: number = 5;
 const virtual: boolean = false;
@@ -20,4 +21,18 @@ function nullReturner() {
 
 function undefinedReturner() {
     return undefined
+}
+
+// Enums 🔻
+enum Direction {
+    up = 11,
+    down = 22,
+    left = 33,
+    right = 44,
+}
+
+const direction: Direction = Direction.left
+
+function dir(): Direction {
+    return Direction.down
 }
