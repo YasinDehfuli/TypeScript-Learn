@@ -1,2 +1,4 @@
 "use strict";
-console.log('TypeScript is running');
+const fullName = "John Doe";
+const num = 5;
+const virtual = false;
