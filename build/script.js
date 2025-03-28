@@ -63,17 +63,19 @@ class Car {
         this.year = year;
         this.name = name;
     }
-    sayHello() {
-        console.log(this.model);
-    }
-    helloWorld() {
-        this.sayHello();
+    getAbstracts(carEngine, carWheels) {
+        console.log(this.engine(carEngine), this.wheels(carWheels));
     }
 }
 class persianCar extends Car {
-    sayModel() {
-        console.log(this.year);
+    engine(carEngine) {
+        return carEngine;
+    }
+    wheels(carWheels) {
+        return carWheels;
     }
 }
-const car = new Car('206', 2012, 'Peugeot');
-console.log(car);
+let car3 = new persianCar('g-class', 2012, 'Benz');
+car3.getAbstracts('2800HP', 6);
+// not available anymore
+// const car = new Car('206', 2012, 'Peugeot')

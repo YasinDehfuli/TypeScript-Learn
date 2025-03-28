@@ -80,7 +80,7 @@ const myObject: ObjectType = {
 
 // Classes 🔻
 
-class Car {
+abstract class Car {
     public model: string
     protected year: number
     name: string
@@ -91,21 +91,27 @@ class Car {
         this.name = name
     }
 
-    private sayHello() {
-        console.log(this.model)
-    }
+    abstract engine(carEngine: string): string
 
-    helloWorld() {
-        this.sayHello();
+    abstract wheels(carWheels: number): number
+
+    getAbstracts(carEngine: string, carWheels: number) {
+        console.log(this.engine(carEngine), this.wheels(carWheels))
     }
 }
 
 class persianCar extends Car {
-    sayModel() {
-        console.log(this.year)
+    engine(carEngine: string) {
+        return carEngine;
+    }
+
+    wheels(carWheels: number) {
+        return carWheels;
     }
 }
 
-const car = new Car('206', 2012, 'Peugeot')
+let car3 = new persianCar('g-class', 2012, 'Benz')
+car3.getAbstracts('2800HP', 6)
 
-console.log(car)
+// not available anymore
+// const car = new Car('206', 2012, 'Peugeot')
