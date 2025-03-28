@@ -62,3 +62,18 @@ function sum3(x: number, y: number, ...z: number[]) {
 }
 
 console.log(sum3(12, 22, 12, 12, 12))
+
+// Objects 🔻
+type ObjectType = {
+    name: string,
+    age: number,
+    func: (x: number, y: number) => number,
+}
+
+const myObject: ObjectType = {
+    name: 'John',
+    age: 26,
+    func: function z(x: number, y: number) {
+        return x + y;
+    }
+}

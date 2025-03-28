@@ -49,3 +49,10 @@ function sum3(x, y, ...z) {
     return x + y;
 }
 console.log(sum3(12, 22, 12, 12, 12));
+const myObject = {
+    name: 'John',
+    age: 26,
+    func: function z(x, y) {
+        return x + y;
+    }
+};
