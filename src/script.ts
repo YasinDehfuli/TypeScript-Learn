@@ -81,8 +81,8 @@ const myObject: ObjectType = {
 // Classes 🔻
 
 class Car {
-    model: string
-    year: number
+    public model: string
+    protected year: number
     name: string
 
     constructor(model: string, year: number, name: string) {
@@ -90,8 +90,22 @@ class Car {
         this.year = year
         this.name = name
     }
+
+    private sayHello() {
+        console.log(this.model)
+    }
+
+    helloWorld() {
+        this.sayHello();
+    }
 }
 
-const car = new Car('206',2012,'Peugeot')
+class persianCar extends Car {
+    sayModel() {
+        console.log(this.year)
+    }
+}
 
-console.log(car)
+const car = new Car('206', 2012, 'Peugeot')
+
+console.log(car.year)

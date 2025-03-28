@@ -63,6 +63,17 @@ class Car {
         this.year = year;
         this.name = name;
     }
+    sayHello() {
+        console.log(this.model);
+    }
+    helloWorld() {
+        this.sayHello();
+    }
+}
+class persianCar extends Car {
+    sayModel() {
+        console.log(this.year);
+    }
 }
 const car = new Car('206', 2012, 'Peugeot');
-console.log(car);
+console.log(car.year);
