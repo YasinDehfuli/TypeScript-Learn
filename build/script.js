@@ -56,3 +56,13 @@ const myObject = {
         return x + y;
     }
 };
+// Classes 🔻
+class Car {
+    constructor(model, year, name) {
+        this.model = model;
+        this.year = year;
+        this.name = name;
+    }
+}
+const car = new Car('206', 2012, 'Peugeot');
+console.log(car);

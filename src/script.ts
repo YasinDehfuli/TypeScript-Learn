@@ -77,3 +77,21 @@ const myObject: ObjectType = {
         return x + y;
     }
 }
+
+// Classes 🔻
+
+class Car {
+    model: string
+    year: number
+    name: string
+
+    constructor(model: string, year: number, name: string) {
+        this.model = model
+        this.year = year
+        this.name = name
+    }
+}
+
+const car = new Car('206',2012,'Peugeot')
+
+console.log(car)
