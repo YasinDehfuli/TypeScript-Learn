@@ -36,3 +36,29 @@ const direction: Direction = Direction.left
 function dir(): Direction {
     return Direction.down
 }
+
+// Functions 🔻
+
+function sum(x: number, y: number) {
+    return x + y;
+}
+
+console.log(sum(1, 2))
+
+function sum2(x: number, y?: number) {
+    if (y) {
+        return x + y;
+    }
+    return x;
+}
+
+console.log(sum2(3))
+
+function sum3(x: number, y: number, ...z: number[]) {
+    if (z) {
+        return z;
+    }
+    return x + y;
+}
+
+console.log(sum3(12, 22, 12, 12, 12))
