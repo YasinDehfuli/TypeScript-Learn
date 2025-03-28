@@ -108,4 +108,4 @@ class persianCar extends Car {
 
 const car = new Car('206', 2012, 'Peugeot')
 
-console.log(car.year)
+console.log(car)
