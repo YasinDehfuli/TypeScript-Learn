@@ -1,4 +1,8 @@
 "use strict";
+let mySearch = (source, subString) => {
+    let result = source.search(subString);
+    return result > -1;
+};
 function person(details) {
     console.log('person name is ==>', details.name, 'person email is ==>', details.email, details.phone);
 }
